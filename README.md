@@ -5,6 +5,7 @@
     1. [Task1_ML_contest](#task1_ml_contest)
     2. [Task2_CNN](#task2_cnn)
     3. [Task3_Image_Classification](#task3_image_classification)
+    4. [Task4_Image_Segmantation](#task4_image_segmantation)
 
 
 # Deep Learning School
@@ -18,7 +19,7 @@ Deep Learning School [link](https://dls.samcs.ru/en/dls), and [link](https://ste
 
 ## Assignments during the course
 ### Format of the tasks
-#### ! In each directory you will find at least two files, one named **'task_description.ipynb'** which is just **template** that was given in assignments by the instructors. The other file is solution !
+#### ! In each directory you will find at least two files, one named **'task_description.ipynb'** which is just **template** that was given in assignments by the instructors. The other files are solution !
 <br>
 
 ## Task Description
@@ -40,3 +41,8 @@ The primary objective of the task was to initially employ ANN to classify images
 ### **Task3_Image_Classification**
 
 The whole task is to classify images from provided dataset in Kaggle. The dataset contains around 20000 images of simpsons cartoon. The goal is to train a model to predict a certain character from that cartoon. The dataset contains 42 classes. First I tried with a simple CNN model and then I used transfer learning with EfficientNet-b2 model. The results are shown in the notebook. With simple CNN my model get overfitting, but with transfer learning I got a good result in 30 epochs.
+
+
+### **Task4_Image_Segmantation**
+
+The main challenge in this task was to write a good model to do semantic segmantation. Images are takes from PH2Dataset, which has 200 images. First we implement the SegNet model with different loss functions like DiceLoss, IoULoss, FocalLoss, SSLoss(Structural Similarity Loss), BCELoss. As you can see from the plots SegNet model is quite good, and learned a lot. And we also were asked to implement UNet architecture and also it's alternatives. We experimented these models with the same loss functions as in SegNet. Of course UNet got higher IoU than SegNet model. At the end of the notebook you can find all the loss and IoU plots that we got for each model.
